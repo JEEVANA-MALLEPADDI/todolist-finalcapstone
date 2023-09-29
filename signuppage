@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script&family=Fuggles&family=Lobster&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Croissant One', cursive;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background:url('https://w.forfun.com/fetch/3a/3a260aba738969c90b8402ccd7041e51.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        form {
+            width: 420px;
+            background-color:transparent;
+            backdrop-filter: blur(60px);
+            box-shadow: 0 0 10px rgba(0,0,0,.2);
+          border-radius: 30px;
+          padding: 30px 40px;
+        }
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            color: aliceblue;
+        }
+        .container {
+            display: flex;
+            align-items: center; 
+            width: 100%;
+            height: 50px;
+            margin: 10px 0;
+            border: 2px solid black;
+            border-radius: 40px;
+            
+        }
+        .container input {
+            flex: 1; 
+            height: 100%;
+            outline: none;
+            border: none;
+            background: transparent;
+            padding-left: 10px; 
+        }
+        .container input::placeholder {
+            color:white;
+        }
+        .container i {
+            margin-right: 10px;
+            font-size: 20px;
+            color:white;
+        }
+        a{
+            text-decoration: none;
+            color:white;
+           
+        }
+        a:hover{
+            text-decoration:underline;
+            color:white;
+           
+        }
+        button{
+            width: 95%;
+            height: 45px;
+            margin-right:10px;
+            margin-left:10px;
+            border:none;
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,.1);
+            cursor:pointer;
+            font-weight: 600;
+
+            
+        }
+        p {
+          margin-top: 10px; 
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="/register" method="GET">
+        
+        <h1>sighnup</h1>
+
+         FIRSTNAME:
+        <div class="container">
+            <input type="text" name="firstname" placeholder="eg: aana__">
+            <i class='bx bxs-user'></i>
+        </div>
+        LASTNAME:
+        <div class="container">
+            <input type="text" name="lastname" placeholder="eg: aana__">
+            <i class='bx bxs-user'></i>
+        </div>
+         EMAIL:
+        <div class="container">
+            
+            <input type="email" name="email" placeholder="eg: __@gmail.com">
+            <i class='bx bx-envelope'></i>
+        </div>
+         PASWORD:
+        <div class="container">
+            
+            <input type="password" name="password" placeholder="Password">
+            <i class='bx bxs-lock-alt'></i>
+        </div>
+        Phoneno:
+        <div class="container">
+            
+            <input type="text" name="phno" placeholder="9089-----">
+            <i class='bx bxs-phone'></i>
+        </div>
+        
+        <button type="submit">register</button>
+        
+    </form>
+    
+</body>
+   
+</html>
